@@ -13,12 +13,12 @@
 
 
                     <div class="row mt32">
-
+			<div>
                             <strong>NIT:</strong> <span t-esc="user.company_id.vat"/><br/>
                             <strong>Nombre comercial:</strong> <span t-esc="user.company_id.partner_id.name"/><br/>
                             <strong>Domicilio fiscal:</strong> <span t-esc="user.company_id.partner_id.street"/><br/>
                             <strong>Registro del:</strong> <span t-esc="data['fecha_desde']" t-esc-options='{"widget": "date"}'/> al: <span t-esc="data['fecha_hasta']" t-esc-options='{"widget": "date"}'/><br/>
-
+			</div>
                     </div>
 
                     <t t-set="result" t-value="lineas(data)"/>
